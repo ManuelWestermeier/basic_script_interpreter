@@ -1,0 +1,24 @@
+@fn run_code(string inp) {
+    
+    @array parts : string
+    parts = split(inp, "\n");
+
+    //data
+    @map numbers : string : float
+    @map strings : string : string
+
+    @foreach line : parts {
+
+        //parse
+        @array parts : string
+        parts = split(replace(replace(replace(line, '\n', ""), '\t', ""), '\r', ""), " ");
+        
+        @destr parts : string = fn p1 p2 p3 p4 p5
+        
+        //variables
+        @imp var.at
+        //call functions 
+        @imp call.at
+    }
+
+}

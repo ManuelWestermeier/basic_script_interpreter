@@ -1,0 +1,47 @@
+# ------- create variables
+n number = 34.5
+n number2 = 29
+n numberoutput = 2
+s string = HalloWelt
+
+# add
+run add number number2 numberoutput
+run out n numberoutput
+# add string
+run addstr string numberoutput string
+# subtract
+run sub number number2 numberoutput
+run out n numberoutput
+# multiply
+run mul number number2 numberoutput
+run out n numberoutput
+# divide
+run div number number2 numberoutput
+run out n numberoutput
+# power
+run pow number number2 numberoutput
+run out n numberoutput
+# mod
+run mod number number2 numberoutput
+run out n numberoutput
+
+# ------- output the created variables
+run out n number
+run out s string
+
+# ------- create the path variables
+s read-path = inp.txt
+s write-path = out.txt
+
+# ------- create the new file data
+s newFileData = hallo\ was\ geht 
+# ------- create the variable for the file data
+s fileData #
+run out 
+
+# ------- read file
+run read read-path in fileData
+run out s fileData
+
+# ------- write file
+run write newFileData in write-path

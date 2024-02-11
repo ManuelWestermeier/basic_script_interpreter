@@ -1,0 +1,21 @@
+@imp run.at
+
+@init {
+
+    if(argc > 1) {
+        @loop argc indexis i {
+            
+            if(i >= 1) {
+
+                print(argv[i]);
+                //print(readFile(argv[i]));
+                run_code(readFile(argv[i]));
+
+            }
+            
+        }
+    }
+
+    system("pause");
+
+}

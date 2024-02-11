@@ -1,0 +1,53 @@
+if(fn == "run") {
+    //output
+    if(p1 == "out") {
+        if(p2 == "s") {
+            print(strings[p3]);
+        }
+        else if(p2 == "n") {
+            print(to_string(numbers[p3]));
+        }
+    }
+
+    //read file
+    else if(p1 == "read" && p3 == "in") {
+        strings[p4] = readFile(strings[p2]);
+    }
+    //write file
+    else if(p1 == "write" && p3 == "in") {
+        writeFile(strings[p4], strings[p2]);
+    }
+
+    //add
+    else if(p1 == "add") {
+        numbers[p4] = numbers[p2] + numbers[p3];
+    }
+    //add strings
+    else if(p1 == "addstr") {
+        strings[p4] = strings[p2] + strings[p3];
+    }
+    //add strings
+    else if(p1 == "addstr") {
+        strings[p4] = strings[p2] + to_string(numbers[p3]);
+    }
+    //subtract
+    else if(p1 == "sub") {
+        numbers[p4] = numbers[p2] + numbers[p3];
+    }
+    //multiply
+    else if(p1 == "mul") {
+        numbers[p4] = numbers[p2] * numbers[p3];
+    }
+    //divide
+    else if(p1 == "div") {
+        numbers[p4] = numbers[p2] / numbers[p3];
+    }
+    //power
+    else if(p1 == "pow") {
+        numbers[p4] = (int)numbers[p2] ^ (int)numbers[p3];
+    }
+    //mod
+    else if(p1 == "mod") {
+        numbers[p4] = (int)numbers[p2] % (int)numbers[p3];
+    }
+}

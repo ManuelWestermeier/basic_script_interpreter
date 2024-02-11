@@ -1,0 +1,14 @@
+//create number
+if(fn == "n" && p2 == "=") {
+    numbers[p1] = strtof(p3.c_str(), NULL);
+}
+else if(fn == "n" && p2 == "#") {
+    numbers[p1] = 0;
+}
+//create string
+else if(fn == "s" && p2 == "=") {
+    strings[p1] = p3;
+}
+else if(fn == "s" && p2 == "#") {
+    strings[p1] = "";
+}
